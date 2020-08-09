@@ -90,6 +90,15 @@ public class MainApp {
         Files.newBufferedReader(path);
         Files.newBufferedWriter(path, StandardOpenOption.CREATE);
 
+        String pathFile = "C:\\source\\cloud_storage\\common\\src\\main\\resources\\clientFiles\\file.pdf";
+        Path path2 = Paths.get(pathFile);
+        String fileName = path2.toFile().getName();
+        byte[] fileNameBytes = fileName.getBytes(StandardCharsets.UTF_8);
+
+
+        int fileNameBytes2 = path2.toFile().getName().toString().length();
+        long len = path2.toFile().length();
+
 
     }
 }
